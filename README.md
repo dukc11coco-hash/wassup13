@@ -20,3 +20,10 @@
 | 역량발전 | 스터디 모집하기 | 상 |
 | 성장전략 | 좋은 질문 자주하기 | 진행중 |
 | 하고 싶은 말 | 헬로 와썹! 🌟 | 완료 |
+<div align="center">
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</div>
+
+
