@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 도구 추천 서비스</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f7f7f7;
+    }
+    .card {
+      max-width: 420px;
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    button {
+      padding: 12px 18px;
+      font-size: 16px;
+      background: #111827;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      min-height: 70px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>AI 도구 추천 앱</h1>
+    <button onclick="getRecommendation()">추천 받기</button>
+    <div id="result">여기에 결과가 나타납니다.</div>
+  </div>
+
+  <script>
+    function getRecommendation() {
+      const tools = [
+        {
+          name: "ChatGPT",
+          reason: "텍스트 생성과 아이디어 정리에 강합니다."
+        },
+        {
+          name: "Midjourney",
+          reason: "이미지 생성에 강합니다."
+        },
+        {
+          name: "Notion AI",
+          reason: "문서 정리에 강합니다."
+        }
+      ];
+
+      const random = tools[Math.floor(Math.random() * tools.length)];
+      const resultDiv = document.getElementById("result");
+
+      resultDiv.innerHTML =
+        "<strong>추천 도구:</strong> " + random.name +
+        "<br><br><strong>추천 이유:</strong> " + random.reason;
+    }
+  </script>
+</body>
+</html>

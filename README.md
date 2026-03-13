@@ -1,45 +1,31 @@
+# AI Tool Recommendation MVP
 
+## 프로젝트 소개
+사용자가 버튼을 클릭하면 상황에 맞는 AI 도구를 추천해주는 간단한 웹 기반 MVP 서비스입니다.
 
+AI 도구가 많아 어떤 것을 선택해야 할지 고민하는 사용자에게 빠르게 추천을 제공하는 것을 목표로 합니다.
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FFD1DC&height=180&section=header&text=Wassup13&fontSize=40&fontColor=ffffff"/>
-<div align="center">
-<img src="https://img.shields.io/badge/Python-FFE4F1?style=for-the-badge&logo=python&logoColor=black"/>
-<img src="https://img.shields.io/badge/Git-FFB6C1?style=for-the-badge&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-F8C8DC?style=for-the-badge&logo=github&logoColor=black"/>
-</div>
+## 주요 기능
+- AI 도구 추천 기능
+- 추천 이유 제공
+- 간단한 웹 인터페이스
 
+## 사용 방법
+1. 웹페이지에서 추천 받기 버튼을 클릭합니다.
+2. 랜덤으로 AI 도구가 추천됩니다.
+3. 추천 이유를 확인할 수 있습니다.
 
-<div align="center">
+## 기술 스택
+- HTML
+- CSS
+- JavaScript
 
-## "안녕하세요 열심히 배우는 개발새싹입니다.!"
-  
-"김득남의 실습 놀이터."
-<div align="center">
+## MVP 목적
+본 프로젝트는 서비스 아이디어를 빠르게 검증하기 위한 Minimum Viable Product 형태로 제작되었습니다.
 
-| 목표 | 내용 | 상태 |
-|---|---|---|
-| 강의 완주 | 끝까지 열심히 완주하기 | 진행중 |
-| 네트워킹 | 동기들과 친해지기 | 진행중 |
-| 역량발전 | 스터디 모집하기 | 상 |
-| 성장전략 | 좋은 질문 자주하기 | 진행중 |
-| 하고 싶은 말 | 헬로 와썹! 🌟 | 완료 |
+현재는 간단한 추천 로직을 사용하지만, 향후에는 사용자 데이터 기반 추천 시스템으로 확장할 수 있습니다.
 
-
-
-
-
-
-
-
-<div align="center">
-
-<img src="https://media.giphy.com/media/ASd0Ukj0y3qMM/giphy.gif" width="220"/>
-
-
-
-
-
-
-
-
+## 향후 확장 계획
+- 사용자 입력 기반 추천
+- AI API 연동
+- 추천 결과 저장 기능
