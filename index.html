@@ -48,24 +48,36 @@
   </div>
 
   <script>
-    function getRecommendation() {
-      const tools = [
-        {
-          name: "ChatGPT",
-          reason: "텍스트 생성과 아이디어 정리에 강합니다."
-        },
-        {
-          name: "Midjourney",
-          reason: "이미지 생성에 강합니다."
-        },
-        {
-          name: "Notion AI",
-          reason: "문서 정리에 강합니다."
-        }
-      ];
+    const tools = [
+      {
+        name: "ChatGPT",
+        reason: "텍스트 생성과 아이디어 정리에 강합니다."
+      },
+      {
+        name: "Claude",
+        reason: "긴 문서 분석과 자연스러운 글 작성에 강합니다."
+      },
+      {
+        name: "Perplexity AI",
+        reason: "검색 기반 리서치와 정보 탐색에 강합니다."
+      },
+      {
+        name: "Notion AI",
+        reason: "문서 정리와 요약, 생산성 관리에 적합합니다."
+      },
+      {
+        name: "Midjourney",
+        reason: "이미지 생성과 시각적 아이디어 표현에 강합니다."
+      },
+      {
+        name: "DALL·E 3",
+        reason: "텍스트 설명을 바탕으로 이미지를 쉽게 생성할 수 있습니다."
+      }
+    ];
 
-      const random = tools[Math.floor(Math.random() * tools.length)];
+    function getRecommendation() {
       const resultDiv = document.getElementById("result");
+      const random = tools[Math.floor(Math.random() * tools.length)];
 
       resultDiv.innerHTML =
         "<strong>추천 도구:</strong> " + random.name +
