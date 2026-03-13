@@ -1,7 +1,7 @@
 ## Live Demo
 https://duk11coco-hash.github.io/wassup13/
 
-# AI Tool Recommendation MVP
+
 # AI Tool Recommendation MVP
 
 ## 프로젝트 소개
