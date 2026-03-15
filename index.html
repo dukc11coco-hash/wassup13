@@ -1,88 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 도구 추천 서비스</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background: #f7f7f7;
-    }
-    .card {
-      max-width: 420px;
-      background: white;
-      padding: 24px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    }
-    h1 {
-      font-size: 24px;
-      margin-bottom: 16px;
-    }
-    button {
-      padding: 12px 18px;
-      font-size: 16px;
-      background: #111827;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    #result {
-      margin-top: 20px;
-      padding: 14px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      min-height: 70px;
-      background: #fafafa;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>AI 도구 추천 서비스</title>
+
+<style>
+body{
+    font-family: Arial;
+    padding:40px;
+}
+
+button{
+    padding:10px 20px;
+    font-size:16px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    border-radius:6px;
+}
+
+#result{
+    margin-top:20px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+</style>
+
 </head>
+
 <body>
-  <div class="card">
-    <h1>AI 도구 추천 앱</h1>
-    <button onclick="getRecommendation()">추천 받기</button>
-    <div id="result">여기에 결과가 나타납니다.</div>
-  </div>
 
-  <script>
-    const tools = [
-      {
-        name: "ChatGPT",
-        reason: "텍스트 생성과 아이디어 정리에 강합니다."
-      },
-      {
-        name: "Claude",
-        reason: "긴 문서 분석과 자연스러운 글 작성에 강합니다."
-      },
-      {
-        name: "Perplexity AI",
-        reason: "검색 기반 리서치와 정보 탐색에 강합니다."
-      },
-      {
-        name: "Notion AI",
-        reason: "문서 정리와 요약, 생산성 관리에 적합합니다."
-      },
-      {
-        name: "Midjourney",
-        reason: "이미지 생성과 시각적 아이디어 표현에 강합니다."
-      },
-      {
-        name: "DALL·E 3",
-        reason: "텍스트 설명을 바탕으로 이미지를 쉽게 생성할 수 있습니다."
-      }
-    ];
+<h1>AI 도구 추천 결과</h1>
 
-    function getRecommendation() {
-      const resultDiv = document.getElementById("result");
-      const random = tools[Math.floor(Math.random() * tools.length)];
+<button onclick="getRecommendation()">추천 받기</button>
 
-      resultDiv.innerHTML =
+<div id="result">
+여기에 결과가 나타납니다.
+</div>
+
+<script>
+
+function getRecommendation(){
+
+    const resultDiv = document.getElementById("result")
+
+    resultDiv.innerHTML = "추천을 분석 중입니다..."
+
+    setTimeout(()=>{
+
+        const tools = [
+            {name:"ChatGPT", reason:"텍스트 생성과 아이디어 정리에 강력합니다."},
+            {name:"Midjourney", reason:"이미지 생성 AI입니다."},
+            {name:"Notion AI", reason:"문서 정리에 강합니다."}
+        ]
+
+        const random = tools[Math.floor(Math.random()*tools.length)]
+
+        resultDiv.innerHTML =
         "<strong>추천 도구:</strong> " + random.name +
-        "<br><br><strong>추천 이유:</strong> " + random.reason;
-    }
-  </script>
+        "<br><br>" +
+        "<strong>추천 이유:</strong> " + random.reason
+
+    },1000)
+
+}
+
+</script>
+
 </body>
 </html>
