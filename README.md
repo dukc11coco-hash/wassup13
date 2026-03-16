@@ -12,7 +12,7 @@ AI Pick은 다양한 AI 도구 중에서
 
 ---
 
-## 🚀 Live Demo
+## 🚀 🚀 AI Pick 서비스 실행
 
 👉 **AI Studio 실행하기**
 
