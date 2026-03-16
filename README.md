@@ -8,13 +8,11 @@ AI Pick은 다양한 AI 도구 중에서 사용 목적에 맞는 AI 서비스를
 
 ---
 
-## 🚀 AI Pick 실행
+## 🚀 Live Demo
 
-👉 AI Pick 서비스 실행하기
-
-https://aistudio.google.com/apps/10b99525-e620-431c-a952-4115287fce89?showPreview=true&showAssistant=true
-
-※ Google 계정 로그인 후 실행 가능합니다.
+- 🔗 **AI Studio 실행:**  
+  https://aistudio.google.com/apps/10b99525-e620-431c-a952-4115287fce89?showPreview=true&showAssistant=true
+  ※ Google 계정 로그인 후 실행 가능합니다.
 
 ---
 
