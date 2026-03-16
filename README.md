@@ -1,5 +1,4 @@
-## Live Demo
-(https://dukc11coco-hash.github.io/wassup13/)
+
 # AI Pick
 
 AI Pick은 다양한 AI 도구 중에서 사용 목적에 맞는 AI 서비스를 추천하고 탐색할 수 있도록 만든 AI 도구 큐레이션 플랫폼입니다.
