@@ -6,7 +6,7 @@
 ---
 
 ## 🔗 Live Demo
-[👉 서비스 바로가기 (Vercel 배포)](https://wassup13.vercel.app)
+[👉 서비스 바로가기 (Vercel 배포)](https://dukc11coco-app.vercel.app/)
 
 ---
 
