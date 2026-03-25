@@ -1,124 +1,20 @@
-## 🚀 Live Demo
-(https://wassup13.vercel.app/)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-# AI Pick
+# Run and deploy your AI Studio app
 
-AI Pick은 다양한 AI 도구 중에서 사용 목적에 맞는 AI 서비스를 추천하고 탐색할 수 있도록 만든 AI 도구 큐레이션 플랫폼입니다.
+This contains everything you need to run your app locally.
 
-사용자는 글쓰기, 리서치, 이미지 생성, 코딩, 자동화 등 AI 사용 목적을 선택하면 해당 분야에 적합한 AI 도구를 추천받을 수 있습니다.
+View your app in AI Studio: https://ai.studio/apps/10b99525-e620-431c-a952-4115287fce89
 
----
+## Run Locally
 
-## 🚀 Live Demo
+**Prerequisites:**  Node.js
 
-- 🔗 **AI Studio 실행:**  
-  https://aistudio.google.com/apps/10b99525-e620-431c-a952-4115287fce89?showPreview=true&showAssistant=true
 
-   ※ Google 계정 로그인 후 실행 가능합니다.
-
----
-
-## 📷 Project Preview
-
-AI Pick 서비스 주요 화면
-
-- AI 추천 가이드 (목적 선택)
-- AI 도구 탐색 화면
-- 카테고리 필터 및 검색 기능
-
----
-
-## 📌 주요 기능
-
-### 1️⃣ 목적 기반 AI 추천
-사용자가 AI를 사용하는 목적을 선택하면 해당 목적에 맞는 AI 도구를 추천합니다.
-
-예시 목적
-
-- 글쓰기 / 번역
-- 리서치 / 검색
-- 이미지 생성
-- 코딩 / 개발
-- 업무 자동화
-
----
-
-### 2️⃣ AI 도구 탐색
-
-100개 이상의 AI 도구 데이터를 기반으로 다양한 AI 서비스를 탐색할 수 있습니다.
-
-각 AI 도구에는 다음 정보가 포함됩니다.
-
-- 도구 이름
-- 간단한 기능 설명
-- 카테고리
-- 태그
-- 상세정보 보기
-- 공식 사이트 링크
-
----
-
-### 3️⃣ 검색 기능
-
-AI 도구 이름, 설명, 태그를 기반으로 원하는 AI 서비스를 빠르게 검색할 수 있습니다.
-
----
-
-### 4️⃣ 카테고리 필터
-
-카테고리별로 AI 도구를 필터링하여 특정 분야의 AI만 탐색할 수 있습니다.
-
-예시 카테고리
-
-- 글쓰기
-- 리서치
-- 이미지
-- 코딩
-- 자동화
-- 무료 / 프리
-- 한국어 지원
-
----
-
-## 🧠 추천 시스템 구조
-
-AI Pick은 단순한 AI 도구 목록이 아니라 사용 목적 기반 추천 구조로 설계되었습니다.
-
-추천 흐름
-
-사용 목적 선택  
-↓  
-카테고리 매칭  
-↓  
-AI 도구 필터링  
-↓  
-추천 결과 표시
-
----
-
-## 📊 데이터
-
-AI Pick은 100개 이상의 AI 도구 데이터를 기반으로 추천 및 탐색 기능을 제공합니다.
-
-데이터에는 다음 정보가 포함됩니다.
-
-- 도구 이름
-- 설명
-- 카테고리
-- 태그
-- 추천 목적
-
----
-
-## 🛠️ 기술 스택
-
-- Next.js
-- TypeScript
-- AI Studio
-- v0
-
----
-
-## 👨‍💻 Team Project
-
-AI Pick은 다양한 AI 서비스를 보다 쉽게 탐색하고 선택할 수 있도록 돕기 위해 개발
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

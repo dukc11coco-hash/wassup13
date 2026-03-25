@@ -1,73 +1,13 @@
-
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
-<title>AI 도구 추천 서비스</title>
-
-<style>
-body{
-    font-family: Arial;
-    padding:40px;
-}
-
-button{
-    padding:10px 20px;
-    font-size:16px;
-    background:#4CAF50;
-    color:white;
-    border:none;
-    border-radius:6px;
-}
-
-#result{
-    margin-top:20px;
-    padding:15px;
-    border:1px solid #ccc;
-    border-radius:8px;
-}
-</style>
-
-</head>
-
-<body>
-
-<h1>AI 도구 추천 결과</h1>
-
-<button onclick="getRecommendation()">추천 받기</button>
-
-<div id="result">
-여기에 결과가 나타납니다.
-</div>
-
-<script>
-
-function getRecommendation(){
-
-    const resultDiv = document.getElementById("result")
-
-    resultDiv.innerHTML = "추천을 분석 중입니다..."
-
-    setTimeout(()=>{
-
-        const tools = [
-            {name:"ChatGPT", reason:"텍스트 생성과 아이디어 정리에 강력합니다."},
-            {name:"Midjourney", reason:"이미지 생성 AI입니다."},
-            {name:"Notion AI", reason:"문서 정리에 강합니다."}
-        ]
-
-        const random = tools[Math.floor(Math.random()*tools.length)]
-
-        resultDiv.innerHTML =
-        "<strong>추천 도구:</strong> " + random.name +
-        "<br><br>" +
-        "<strong>추천 이유:</strong> " + random.reason
-
-    },1000)
-
-}
-
-</script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
+
